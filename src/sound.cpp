@@ -2688,7 +2688,7 @@ void RegisterSoundsystem(asIScriptEngine *engine) {
 	engine->RegisterObjectMethod("sound", "void set_stop_time_with_fade_in_milliseconds(uint64 absolute_time, uint64 fade_length)", asFUNCTION((virtual_call < sound, &sound::set_stop_time_with_fade_in_milliseconds, void, unsigned long long, unsigned long long >)), asCALL_CDECL_OBJFIRST);
 	engine->RegisterObjectMethod("sound", "void set_looping(bool looping) property", asFUNCTION((virtual_call < sound, &sound::set_looping, void, bool >)), asCALL_CDECL_OBJFIRST);
 	engine->RegisterObjectMethod("sound", "bool get_looping() const property", asFUNCTION((virtual_call < sound, &sound::get_looping, bool >)), asCALL_CDECL_OBJFIRST);
-	engine->RegisterObjectMethod("sound", "bool get_at_end() const property", asFUNCTION((virtual_call < sound, &sound::get_looping, bool >)), asCALL_CDECL_OBJFIRST);
+	engine->RegisterObjectMethod("sound", "bool get_at_end() const property", asFUNCTION((virtual_call < sound, &sound::get_at_end, bool >)), asCALL_CDECL_OBJFIRST);
 	engine->RegisterObjectMethod("sound", "bool seek(const uint64 position)", asFUNCTION((virtual_call < sound, &sound::seek, bool, unsigned long long >)), asCALL_CDECL_OBJFIRST);
 	engine->RegisterObjectMethod("sound", "bool seek_in_frames(const uint64 position)", asFUNCTION((virtual_call < sound, &sound::seek_in_frames, bool, unsigned long long >)), asCALL_CDECL_OBJFIRST);
 	engine->RegisterObjectMethod("sound", "bool seek_in_milliseconds(const uint64 position)", asFUNCTION((virtual_call < sound, &sound::seek_in_milliseconds, bool, unsigned long long >)), asCALL_CDECL_OBJFIRST);
